@@ -45,20 +45,7 @@ for key in sorted(D.keys()):
         # load the image, and setup the mouse callback function
         image = cv2.imread(os.getcwd()+"\\"+str(file))
         cv2.namedWindow("image",flags = cv2.WINDOW_NORMAL)
-        #cv2.resizeWindow('image', 600,600)
         cv2.setMouseCallback("image", click_record)
- 
-
-##        # display the image and wait for a keypress
-##        #cv2.imshow("image", image)
-##        #key = cv2.waitKey(1) & 0xFF
-##           
-## 
-##        # if the 'c' key is pressed, break from the loop
-##        if key == ord("c"):
-##                cv2.waitKey(0)
-##                cv2.destroyAllWindows()
-
 
         while True:
                 # display the image and wait for a keypress
